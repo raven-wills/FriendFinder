@@ -1,29 +1,26 @@
 {
-  "name": "friend-finder",
+  "name": "FriendFinder",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/raven-wills/FriendFinder.git"
+    "url": "git+https://github.com/erikamats/friendFinder.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/raven-wills/FriendFinder/issues"
+    "url": "https://github.com/erikamats/friendFinder/issues"
   },
-  "homepage": "https://github.com/raven-wills/FriendFinder#readme",
+  "homepage": "https://github.com/erikamats/friendFinder#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "node": "^9.10.1",
     "path": "^0.12.7"
-  },
-  "devDependencies": {}
+  }
 }
