@@ -4,7 +4,6 @@ var express = require("express");
 // var server = require("../../server.js");
 
 var app = express();
-var PORT = 8080;
 
 // Data
 // ===========================================================
@@ -32,6 +31,3 @@ app.get("/api/friends", function(req, res) {
 
 // Listener
 // ===========================================================
-app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
-});
