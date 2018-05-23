@@ -1,7 +1,6 @@
 // Dependencies
 // ===========================================================
 var express = require("express");
-// var server = require("../../server.js");
 
 var app = express();
 
@@ -20,14 +19,3 @@ var friends = [
 app.get("/api/friends", function(req, res) {
   return res.json(friends);
 });
-
-// var apiRoutes = function(app) {
-//   return app.get("/api/friends", function(req, res) {
-//     return res.json(friends);
-//   });
-// };
-
-// module.exports = apiRoutes;
-
-// Listener
-// ===========================================================
