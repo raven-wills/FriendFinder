@@ -9,143 +9,144 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery.js"></script>
+
     <title>Survey</title>
 </head>
 
 <body>
-    <h1>Survey Questions</h1>
-    <form action="app/data/friends.js" method="POST">
-        <fieldset>
-            <legend>About You:</legend>
-            <h4>Name (Required)</h4>
-            <input type="text" name="name" id="name">
-            <h4>Link to Photo Image (Required)</h4>
-            <input type="text" name="image" id="image">
-        </fieldset>
-        <fieldset>
-            <legend>Questions:</legend>
-            <h4>Question 1</h4>
-            <select id="q1">
-                <option value></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h4>Question 2</h4>
-            <select id="q2">
-                <option value></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h4>Question 3</h4>
-            <select id="q3">
-                <option value></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h4>Question 4</h4>
-            <select id="q4">
-                <option value></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h4>Question 5</h4>
-            <select id="q5">
-                <option value></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h4>Question 6</h4>
-            <select id="q6">
-                <option value></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h4>Question 7</h4>
-            <select id="q7">
-                <option value></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h4>Question 8</h4>
-            <select id="q8">
-                <option value></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h4>Question 9</h4>
-            <select id="q9">
-                <option value></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h4>Question 10</h4>
-            <select id="q10">
-                <option value></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </fieldset>
-        <fieldset>
-            <button type="submit" id="submit">
-                Submit
-            </button>
+    <div class="container center-align">
+        <h1>Survey Questions</h1>
+        <div class="row">
+            <div class="center-align">
+                <form action="app/data/friends.js" method="POST" class="col s12">
+                    <fieldset class="card-panel teal lighten-2">
+                        <h4> Name (Required)</h4>
+                        <input type="text" name="name" id="name">
+                        <h4>Link to Photo Image (Required)</h4>
+                        <input type="text" name="image" id="image">
+                    </fieldset>
+                    <h4>Question 1</h4>
+                    <select id="q1">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h4>Question 2</h4>
+                    <select id="q2">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h4>Question 3</h4>
+                    <select id="q3">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h4>Question 4</h4>
+                    <select id="q4">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h4>Question 5</h4>
+                    <select id="q5">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h4>Question 6</h4>
+                    <select id="q6">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h4>Question 7</h4>
+                    <select id="q7">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h4>Question 8</h4>
+                    <select id="q8">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h4>Question 9</h4>
+                    <select id="q9">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h4>Question 10</h4>
+                    <select id="q10">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
 
-        </fieldset>
-    </form>
-    <div class="row section">
-        <div class="col">
-            <!-- Modal Trigger -->
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-            <p>You have to include jQuery and Materialize JS + CSS for the modal to work. You can include it from
-                <a href="http://materializecss.com/getting-started.html">CDN (getting started)</a>.
+
+                    <!-- <button type="submit" id="submit"> -->
+                    <a class="waves-effect waves-light btn modal-trigger" id="submitInfo" href="#modal1">Submit</a>
+                    <!-- </button> -->
+
+
+
+                </form>
+            </div>
         </div>
     </div>
-    <!-- Modal Structure -->
     <div id="modal1" class="modal">
         <div class="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
+            <h4>Best Match</h4>
+            <h2 id="match-name"></h2>
+            <img class="materialboxed" width="650" id="match-image" src="" alt="">
         </div>
         <div class="modal-footer">
-            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="#!" data-target="modal1" href="#modal1" class=" waves-effect waves-green btn-flat modal-trigger">Agree</a>
         </div>
     </div>
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script type="text/javascript">
-        $("#submit").on("click", function (event) {
+        $(".modal").modal();
+        $('select').formSelect()
+        $('.materialboxed').materialbox();
+        $("#submitInfo").on("click", function (event) {
             event.preventDefault();
-            ('.modal-trigger').leanModal();
             var newFriend = {
                 friendName: $("#name").val().trim(),
                 friendImage: $("#image").val().trim(),
@@ -153,7 +154,8 @@
             }
 
             $.post("/api/friends", newFriend, function (data) {
-                console.log(data);
+                $("#match-name").text(data.friendName);
+                $("#match-image").attr("src", data.friendImage);
 
             });
         });
