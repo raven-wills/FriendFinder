@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery.js"></script>
     <title>Survey</title>
 </head>
 
@@ -14,14 +15,14 @@
         <fieldset>
             <legend>About You:</legend>
             <h4>Name (Required)</h4>
-            <input type="text" name="name" id="">
+            <input type="text" name="name" id="name">
             <h4>Link to Photo Image (Required)</h4>
-            <input type="text" name="image" id="">
+            <input type="text" name="image" id="image">
         </fieldset>
         <fieldset>
             <legend>Questions:</legend>
             <h4>Question 1</h4>
-            <select>
+            <select id="q1">
                 <option value></option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -30,7 +31,7 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
             <h4>Question 2</h4>
-            <select>
+            <select id="q2">
                 <option value></option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -39,7 +40,7 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
             <h4>Question 3</h4>
-            <select>
+            <select id="q3">
                 <option value></option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -48,7 +49,7 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
             <h4>Question 4</h4>
-            <select>
+            <select id="q4">
                 <option value></option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -57,7 +58,7 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
             <h4>Question 5</h4>
-            <select>
+            <select id="q5">
                 <option value></option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -66,7 +67,7 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
             <h4>Question 6</h4>
-            <select>
+            <select id="q6">
                 <option value></option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -75,7 +76,7 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
             <h4>Question 7</h4>
-            <select>
+            <select id="q7">
                 <option value></option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -84,7 +85,7 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
             <h4>Question 8</h4>
-            <select>
+            <select id="q8">
                 <option value></option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -93,7 +94,7 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
             <h4>Question 9</h4>
-            <select>
+            <select id="q9">
                 <option value></option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -102,7 +103,7 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
             <h4>Question 10</h4>
-            <select>
+            <select id="q10">
                 <option value></option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -112,9 +113,24 @@
             </select>
         </fieldset>
         <fieldset>
-            <button type="submit">Submit</button>
+            <button type="submit" id="submit">Submit</button>
         </fieldset>
     </form>
+    <script type="text/javascript">
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            var newFriend = {
+                friendName: $("#name").val().trim(),
+                friendImage: $("#image").val().trim(),
+                scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(),]
+            }
+
+            $.post("/api/friends", newFriend, function (data) {
+                console.log(data);
+            });
+        });
+    </script>
 </body>
 
 </html>
