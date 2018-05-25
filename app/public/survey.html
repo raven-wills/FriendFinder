@@ -15,17 +15,17 @@
 
 <body>
     <div class="container center-align">
-        <h1>Survey Questions</h1>
+        <h1>Find a Friend</h1>
         <div class="row">
             <div class="center-align">
                 <form action="app/data/friends.js" method="POST" class="col s12">
-                    <fieldset class="card-panel teal lighten-2">
-                        <h4> Name (Required)</h4>
-                        <input type="text" name="name" id="name">
-                        <h4>Link to Photo Image (Required)</h4>
-                        <input type="text" name="image" id="image">
-                    </fieldset>
-                    <h4>Question 1</h4>
+                    <div class="card-panel teal lighten-2 z-depth-4">
+                        <h5> Name (Required)</h5>
+                        <input type="text" name="name" id="name" class="center-align">
+                        <h5>Link to Photo Image (Required)</h5>
+                        <input type="text" name="image" id="image" class="center-align">
+                    </div>
+                    <h5>Question 1: Loves long walks</h5>
                     <select id="q1">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -34,7 +34,7 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <h4>Question 2</h4>
+                    <h5>Question 2: Feels the most alive while in water</h5>
                     <select id="q2">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -43,7 +43,7 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <h4>Question 3</h4>
+                    <h5>Question 3: Enjoys a juicy steak</h5>
                     <select id="q3">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -52,7 +52,7 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <h4>Question 4</h4>
+                    <h5>Question 4: Feels that everyday needs a nap</h5>
                     <select id="q4">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -61,7 +61,7 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <h4>Question 5</h4>
+                    <h5>Question 5: Loves living adventurously</h5>
                     <select id="q5">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -70,7 +70,7 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <h4>Question 6</h4>
+                    <h5>Question 6: Could survive on veggies</h5>
                     <select id="q6">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -79,7 +79,7 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <h4>Question 7</h4>
+                    <h5>Question 7: Grooming is important</h5>
                     <select id="q7">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -88,7 +88,7 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <h4>Question 8</h4>
+                    <h5>Question 8: Consider themselves playful</h5>
                     <select id="q8">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -97,7 +97,7 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <h4>Question 9</h4>
+                    <h5>Question 9: Feels at home in colder climates</h5>
                     <select id="q9">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -106,7 +106,7 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <h4>Question 10</h4>
+                    <h5>Question 10: Loves to travel</h5>
                     <select id="q10">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -118,7 +118,7 @@
 
 
                     <!-- <button type="submit" id="submit"> -->
-                    <a class="waves-effect waves-light btn modal-trigger" id="submitInfo" href="#modal1">Submit</a>
+                    <a class="waves-effect waves-light btn-large modal-trigger" id="submitInfo" href="#modal1">Submit</a>
                     <!-- </button> -->
 
 
@@ -134,7 +134,7 @@
             <img class="materialboxed" width="650" id="match-image" src="" alt="">
         </div>
         <div class="modal-footer">
-            <a href="#!" data-target="modal1" href="#modal1" class=" waves-effect waves-green btn-flat modal-trigger">Agree</a>
+            <a href="#!" data-target="modal1" href="#modal1" class=" waves-effect waves-green btn-flat modal-close">Close</a>
         </div>
     </div>
 

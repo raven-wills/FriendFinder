@@ -18,6 +18,7 @@ module.exports = function(app) {
     console.log(bestFriend);
     friendsData.push(req.body);
     res.json(bestFriend);
+    t;
   });
 };
 
