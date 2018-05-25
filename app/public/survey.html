@@ -9,22 +9,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
-
+    <style>
+    </style>
     <title>Survey</title>
 </head>
 
-<body>
-    <div class="container center-align">
+<body class="blue lighten-5">
+    <div class="container center-align blue lighten-5">
         <h1>Find a Friend</h1>
         <div class="row">
             <div class="center-align">
                 <form action="app/data/friends.js" method="POST" class="col s12">
-                    <div class="card-panel teal lighten-2 z-depth-4">
+                    <div class="card-panel teal lighten-2 z-depth-4 header">
                         <h5> Name (Required)</h5>
                         <input type="text" name="name" id="name" class="center-align">
                         <h5>Link to Photo Image (Required)</h5>
                         <input type="text" name="image" id="image" class="center-align">
                     </div>
+                    <br>
                     <h5>Question 1: Loves long walks</h5>
                     <select id="q1">
                         <option value="" disabled selected>Choose your option</option>
@@ -115,9 +117,10 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-
+                    <br>
 
                     <!-- <button type="submit" id="submit"> -->
+
                     <a class="waves-effect waves-light btn-large modal-trigger" id="submitInfo" href="#modal1">Submit</a>
                     <!-- </button> -->
 
